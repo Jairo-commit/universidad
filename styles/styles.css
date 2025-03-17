@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+#padre1{
+    height: 30vh;
+    justify-content: center;
+}
+
+#padre2{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+
+#hijo1 {
+    width: 80vw;
+    height: 70vh;
+}
+#hijo2{
+    width: 20vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nieto {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.nieto div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#padre1, .nieto div, #hijo2{
+    padding: 6px;
+}
+
+#padre1 h1, .nieto div h1, #hijo2 h1{
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}
